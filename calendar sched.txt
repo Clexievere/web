@@ -1,0 +1,100 @@
+const eventsSchedule = [
+    // August 2023
+    { day: 7, month: 8, year: 2023, events: [{ title: "Start of Reporting of Faculty\nGeneral Registration for 1st Semester", time: "00:00 AM - 23:59 PM" }] },
+    { day: 7, month: 8, year: 2023, events: [{ title: "First Year", time: "00:00 AM - 23:59 PM" }] },
+    { day: 9, month: 8, year: 2023, events: [{ title: "Fourth Year and Fifth Year (without Middle Term)", time: "00:00 AM - 23:59 PM" }] },
+    { day: 10, month: 8, year: 2023, events: [{ title: "Third year(w/o Middle term)", time: "00:00 AM - 23:59 PM" }] },
+    { day: 11, month: 8, year: 2023, events: [{ title: "Second year (without Middle Term)", time: "00:00 AM - 23:59 PM" }] },
+    { day: 14, month: 8, year: 2023, events: [{ title: "Fourth and Fifth year (with Middle Term)", time: "00:00 AM - 23:59 PM" }] },
+    { day: 15, month: 8, year: 2023, events: [{ title: "Third year(w/ Middle Term)", time: "00:00 AM - 23:59 PM" }] },
+    { day: 16, month: 8, year: 2023, events: [{ title: "Second year (with Middle term)", time: "00:00 AM - 23:59 PM" }] },
+    { day: 17, month: 8, year: 2023, events: [{ title: "Irregular Students", time: "00:00 AM - 23:59 PM" }] },
+
+    // September 2023
+    { day: 5, month: 9, year: 2023, events: [{ title: "Last day of adding/Changing of subjects", time: "00:00 AM - 23:59 PM" }] },
+
+    // October 2023
+    { day: 2, month: 10, year: 2023, events: [{ title: "Deadline for Filing the Application for Graduation", time: "00:00 AM - 23:59 PM" }] },
+    { day: 9, month: 10, year: 2023, events: [{ title: "Deadline for Submission of the Tentative list for Graduation", time: "00:00 AM - 23:59 PM" }] },
+    { day: 10, month: 10, year: 2023, events: [{ title: "Deadline for Dropping Subjects", time: "00:00 AM - 23:59 PM" }] },
+    { day: 17, month: 10, year: 2023, events: [{ title: "Midterm Examination", time: "00:00 AM - 23:59 PM" }] },
+
+    // December 2023
+    { day: 11, month: 12, year: 2023, events: [{ title: "Last Day of Thesis Final Defense", time: "00:00 AM - 23:59 PM" }] },
+    { day: 14, month: 12, year: 2023, events: [{ title: "Final Examination (Graduating Students)", time: "00:00 AM - 23:59 PM" }] },
+    { day: 19, month: 12, year: 2023, events: [{ title: "Final Examination (Non-Graduating Students)", time: "00:00 AM - 23:59 PM" }] },
+    { day: 22, month: 12, year: 2023, events: [{ title: "End of Semester", time: "00:00 AM - 23:59 PM" }] },
+
+    // January 2024
+    { day: 8, month: 1, year: 2024, events: [{ title: "Start of Reporting of Faculty\nGeneral Registration for 2nd Semester", time: "00:00 AM - 23:59 PM" }] },
+    { day: 11, month: 1, year: 2024, events: [{ title: "Deadline for Submission of First Semester Grades (Graduating Students)", time: "00:00 AM - 23:59 PM" }] },
+    { day: 12, month: 1, year: 2024, events: [{ title: "Deadline for Submission of First Semester Grades (Non Graduating Students)", time: "00:00 AM - 23:59 PM" }] },
+    { day: 15, month: 1, year: 2024, events: [{ title: "Fourth Year and Fifth Year Enrollment", time: "00:00 AM - 23:59 PM" }] },
+    { day: 16, month: 1, year: 2024, events: [{ title: "Third year Enrollment", time: "00:00 AM - 23:59 PM" }] },
+    { day: 17, month: 1, year: 2024, events: [{ title: "Second year Enrollment", time: "00:00 AM - 23:59 PM" }] },
+    { day: 18, month: 1, year: 2024, events: [{ title: "First year Enrollment", time: "00:00 AM - 23:59 PM" }] },
+    { day: 19, month: 1, year: 2024, events: [{ title: "Irregular students Enrollment", time: "00:00 AM - 23:59 PM" }] },
+    { day: 22, month: 1, year: 2024, events: [{ title: "Start of Classes", time: "00:00 AM - 23:59 PM" }] },
+
+    // February 2024
+    { day: 5, month: 2, year: 2024, events: [{ title: "Last. Day of Adding/Changing Subjects", time: "00:00 AM - 23:59 PM" }] },
+
+    // March 2024
+    { day: 4, month: 3, year: 2024, events: [{ title: "Deadline for Filing the Application for Graduation", time: "00:00 AM - 23:59 PM" }] },
+    { day: 11, month: 3, year: 2024, events: [{ title: "Deadline for Submission of the Tentative List for Graduation", time: "00:00 AM - 23:59 PM" }] },
+    { day: 12, month: 3, year: 2024, events: [{ title: "Deadline for Dropping Subjects", time: "00:00 AM - 23:59 PM" }] },
+    { day: 19, month: 3, year: 2024, events: [{ title: "Midterm Examination", time: "00:00 AM - 23:59 PM" }] },
+
+    // May 2024
+    { day: 13, month: 5, year: 2024, events: [{ title: "Last Day of Thesis Final Defense", time: "00:00 AM - 23:59 PM" }] },
+    { day: 16, month: 5, year: 2024, events: [{ title: "Final Examination (Graduating Students)", time: "00:00 AM - 23:59 PM" }] },
+    { day: 21, month: 5, year: 2024, events: [{ title: "Final Examination (Non-Graduating Students)", time: "00:00 AM - 23:59 PM" }] },
+    { day: 24, month: 5, year: 2024, events: [{ title: "End of Semester", time: "00:00 AM - 23:59 PM" }] },
+
+    // June 2024
+    { day: 7, month: 6, year: 2024, events: [{ title: "Deadline for Submission of Second Semester Grades (Graduating Students)", time: "00:00 AM - 23:59 PM" }] },
+    { day: 10, month: 6, year: 2024, events: [{ title: "Deadline for Submission of Second Semester Grades (Non-Graduating)", time: "00:00 AM - 23:59 PM" }] },
+    { day: 10, month: 6, year: 2024, events: [{ title: "General Registration for Mid-year", time: "00:00 AM - 23:59 PM" }] },
+    { day: 11, month: 6, year: 2024, events: [{ title: "Fourth Year and Fifth Year", time: "00:00 AM - 23:59 PM" }] },
+    { day: 13, month: 6, year: 2024, events: [{ title: "Third Year", time: "00:00 AM - 23:59 PM" }] },
+    { day: 14, month: 6, year: 2024, events: [{ title: "Second Year", time: "00:00 AM - 23:59 PM" }] },
+    { day: 17, month: 6, year: 2024, events: [{ title: "Irregular Students", time: "00:00 AM - 23:59 PM" }] },
+    { day: 25, month: 6, year: 2024, events: [{ title: "Start of Classes", time: "00:00 AM - 23:59 PM" }] },
+
+    // July 2024
+    { day: 4, month: 7, year: 2024, events: [{ title: "Midterm Examination", time: "00:00 AM - 23:59 PM" }] },
+    { day: 9, month: 7, year: 2024, events: [{ title: "Deadline for Filing the Application for Graduation", time: "00:00 AM - 23:59 PM" }] },
+    { day: 12, month: 7, year: 2024, events: [{ title: "Deadline for Submission of the Tentative List for Graduation", time: "00:00 AM - 23:59 PM" }] },
+    { day: 25, month: 7, year: 2024, events: [{ title: "Final Examination(Graduating Students)", time: "00:00 AM - 23:59 PM" }] },
+    { day: 26, month: 7, year: 2024, events: [{ title: "Final Examination (Non- Graduating Students)", time: "00:00 AM - 23:59 PM" }] },
+    { day: 26, month: 7, year: 2024, events: [{ title: "End of Semester", time: "00:00 AM - 23:59 PM" }] },
+
+    // August 2024
+    { day: 9, month: 8, year: 2024, events: [{ title: "Deadline for Submission of Mid-year Class Grades (Graduating and Non-Graduating Students)", time: "00:00 AM - 23:59 PM" }] },
+    
+
+
+
+    { day: 9, month: 8, year: 2023, events: [{ title: "Holiday", time: "00:00 AM - 23:59 PM" }] },
+    { day: 21, month: 8, year: 2023, events: [{ title: "Ninoy Aquino Day", time: "00:00 AM - 23:59 PM" }] },
+    { day: 28, month: 8, year: 2023, events: [{ title: "National Heroes Day", time: "00:00 AM - 23:59 PM" }] },
+    { day: 1, month: 11, year: 2023, events: [{ title: "All Saints Day", time: "00:00 AM - 23:59 PM" }] },
+    { day: 2, month: 11, year: 202, events: [{ title: "All Souls Day", time: "00:00 AM - 23:59 PM" }] },
+    { day: 27, month: 11, year: 2023, events: [{ title: "Bonifacio Day", time: "00:00 AM - 23:59 PM" }] },
+    { day: 8, month: 12, year: 2023, events: [{ title: "Feast of the Immaculate Conception of Mary", time: "00:00 AM - 23:59 PM" }] },
+    { day: 25, month: 12, year: 2023, events: [{ title: "Christmas Day", time: "00:00 AM - 23:59 PM" }] },
+    { day: 30, month: 12, year: 2023, events: [{ title: "Rizal Day", time: "00:00 AM - 23:59 PM" }] },
+    { day: 31, month: 12, year: 2023, events: [{ title: "New Year's Eve", time: "00:00 AM - 23:59 PM" }] },
+    { day: 1, month: 1, year: 2024, events: [{ title: "New Year Day", time: "00:00 AM - 23:59 PM" }] },
+    { day: 10, month: 2, year: 2024, events: [{ title: "Lunar New Year's Day", time: "00:00 AM - 23:59 PM" }] },
+    { day: 25, month: 2, year: 2024, events: [{ title: "EDSA People Power Anniversary", time: "00:00 AM - 23:59 PM" }] },
+    { day: 28, month: 3, year: 2024, events: [{ title: "Maundy Thursday", time: "00:00 AM - 23:59 PM" }] },
+    { day: 29, month: 3, year: 2024, events: [{ title: "Good Friday", time: "00:00 AM - 23:59 PM" }] },
+    { day: 30, month: 3, year: 2024, events: [{ title: "Black Saturday", time: "00:00 AM - 23:59 PM" }] },
+    { day: 5, month: 4, year: 2024, events: [{ title: "Pangasinan Day", time: "00:00 AM - 23:59 PM" }] },
+    { day: 9, month: 4, year: 2024, events: [{ title: "The Day of Valor", time: "00:00 AM - 23:59 PM" }] },
+    { day: 10, month: 4, year: 2024, events: [{ title: "Eidul-Fitar", time: "00:00 AM - 23:59 PM" }] },
+    { day: 1, month: 5, year: 2024, events: [{ title: "Labor Day", time: "00:00 AM - 23:59 PM" }] },
+    { day: 12, month: 6, year: 2024, events: [{ title: "Independence Day", time: "00:00 AM - 23:59 PM" }] },
+    { day: 22, month: 8, year: 2024, events: [{ title: "Deadline for Submission of Mid-year Class Grades (Graduating and Non-Graduating Students)", time: "00:00 AM - 23:59 PM" }] },
+    { day: 9, month: 8, year: 2024, events: [{ title: "Holiday", time: "00:00 AM - 23:59 PM" }] },
